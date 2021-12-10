@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.wrapping {
+    max-width: 1140px;
+    margin: 0 auto;
+    font-size: 17px;
+    background-color: black;
+    color: white;
+    padding-bottom: 40px;
+}
+.heading {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0 20px;
+}
+.heading-title {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.number {
+    font-size: 46px;
+    line-height: 127%;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: white;
+    color: black;
+    margin-bottom: 40px;
+    border: solid 2px white;
+    z-index: 10;
+}
+.number::before {
+    content: "";
+    width: 2000px;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    left: -1000px;
+    background-color: white;
+    z-index: -10;
+}
+.btn {
+    padding: 20px;
+    font-size: 24px;
+    background-color: white;
+    color: black;
+}
+.main {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+.left,.right {
+    display: flex;
+    flex-direction: column;
+}
+.guess {
+    width: 160px;
+    height: 80px;
+    font-size: 36px;
+    margin-bottom: 20px;
+    background-color: black;
+    color: white;
+    padding: 20%;
+    border: 3px solid white
+}
+.message {
+    margin-bottom: 20px;
+}
+
